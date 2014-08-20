@@ -1,0 +1,378 @@
+// Normally mainpage styles 
++font('ralewaybold', 'raleway-bold')
+
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px blue !important
+label.error
+  display: none !important
+
+=rwb
+  font-family: "ralewaybold"
+  font-weight: normal
+  font-style: normal
+
+=arial
+  font-family: "Arial"
+  font-weight: normal
+  font-style: normal
+=georgia
+  font-family: "Georgia"
+  font-weight: normal
+  font-style: normal
+
+.icon
+  display: inline-block
+  position: relative
+
+body
+  font-family: Arial, sans-serif
+  font-size: 14px
+  line-height: 1.4
+  background-color: #fff
+  color: black
+  +clr
+input
+  +placeholder
+    font-size: 16px
+    +arial
+    font-style: italic
+    color: #5f5f5f
+    line-height: 1em
+%in
+  max-width: 1200px
+  width: 978px
+  margin-left: auto
+  margin-right: auto
+
+.btn
+  display: inline-block
+  +border-radius(4px)
+  text-decoration: none
+  padding: 10px 20px
+  +transition(background, .5s)
+.menu
+  +clr
+  height: 63px
+  position: fixed
+  width: 100%
+  top: 0
+  bottom: auto
+  z-index: 9999
+  background: #ffffff
+
+
+  nav
+    @extend %in
+    padding-top: 25px
+    +clr
+    ul
+      font-size: 12px
+      display: inline-block
+      +arial
+
+      li
+        display: inline-block
+        margin-right: 37px
+        &:last-child
+          margin-right: 0
+        a
+          color: inherit
+          text-decoration: underline
+
+          &:hover
+            text-decoration: none
+    .menu_contacts
+      float: right
+      width: 340px
+      margin-top: -7px
+    .menu_phone
+      +rwb
+      font-size: 24px
+      display: inline-block
+      float: left
+    .menu_addr
+      +arial
+      font-size: 12px
+      font-weight: bold
+      float: right
+      text-align: right
+
+header
+  background: url(../img/top_bg.jpg) center no-repeat
+  +background-size(cover)
+  height: 706px
+  .header_in
+    padding-top: 85px
+    @extend %in
+    +clr
+    .header_text
+      float: left
+      h3
+        +arial
+        font-weight: bold
+        font-size: 30px
+        color: #ffffff
+        +text-shadow(0 0 20px white)
+      h4
+        margin-top: 5px
+        color: #fff
+        +georgia
+        font-size: 42px
+        font-weight: bold
+        font-style: italic
+        +text-shadow(0 3px 6px rgba(71,180,235,.75))
+        line-height: 1.1em
+      ul
+        padding-left: 28px
+        margin-top: 14px
+        +georgia
+        font-size: 24px
+        font-weight: bold
+        font-style: italic
+        color: #ffffff
+        li
+          position: relative
+          &:before
+            position: absolute
+            +s(ok)
+            top: 10px
+            left: -25px
+            content: ""
+      .action
+        position: relative
+        margin-top: 25px
+        display: inline-block
+        border: dashed 5px rgb(254,80,138)
+        width: 250px
+        height: 145px
+        +background-clip(padding-box)
+        +border-radius(20px)
+        background: #ffffff
+        p
+          +georgia
+          font-size: 24px
+          font-weight: bold
+          font-style: italic
+          color: rgb(254,80,138)
+          padding: 25px 30px
+        &:after
+          +s(arrow_bottom)
+          position: absolute
+          content: ""
+          top: 166px
+          left: 256px
+    .header_turtle-img
+      position: absolute
+      left: 375px
+      top: 0
+    .header_form-block
+      +clr
+      float: right
+      width: 235px
+      margin-top: 265px
+      position: relative
+      h4
+        +arial
+        font-size: 14px
+        font-weight: bold
+        text-align: right
+        padding-top: 15px
+      .arrow_top
+        position: absolute
+        top: -247px
+        left: -83px
+        +s(arrow_top)
+      .price
+        position: absolute
+        top: -180px
+        left: -40px
+        width: 120px
+        height: 120px
+        border: 4px solid rgba(255,255,255,.46)
+        +border-radius(50%)
+        +background-clip(padding-box)
+        +background-image(linear-gradient(to bottom, #fd4b8d 0%, #fd677b 100%))
+        z-index: 2
+      .discount
+        width: 90px
+        height: 90px
+        top: -218px
+        left: 62px
+        z-index: 1
+      .arrow_middle
+        position: absolute
+        top: -79px
+        left: 92px
+        +s(arrow_middle)
+      p
+        text-align: center
+        font-size: 24px
+        color: #ffffff
+        padding-top: 15px
+        +georgia
+        font-style: italic
+        font-weight: bold
+        line-height: 1.2em
+        span
+          font-size: 36px
+        &.small
+          font-size: 18px
+          padding-top: 20px
+          span
+            font-size: 24px
+
+.hello
+  .hello_in
+    @extend %in
+    margin-top: 10px
+  .turtle_img-small
+    display: table
+    margin: 5px auto 0
+  .hello_item
+    display: inline-block
+    width: 305px
+    text-align: center
+    vertical-align: top
+    padding-right: 8px
+    padding-left: 8px
+    margin-bottom: 30px
+
+    .hello_img
+      position: relative
+      img
+        +border-radius(50%)
+      i
+        position: absolute
+        content: ""
+        +s(play)
+        top: 27px
+        left: 102px
+    h3
+      font-size: 22px
+      +georgia
+      font-style: italic
+      font-weight: bold
+      margin-top: 15px
+      margin-bottom: 15px
+    h4
+      +arial
+      font-size: 15px
+      padding-right: 20px
+      padding-left: 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

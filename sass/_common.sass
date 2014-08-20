@@ -1,0 +1,256 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+
+body
+  font-family: Arial, sans-serif
+  font-size: 12px
+  line-height: 1.4
+
+input
+  margin-bottom: 15px
+  border: 2px solid #fda765
+  +border-radius(12px)
+  +background-clip(padding-box)
+  +box-shadow(inset 1px 1px 2px rgba(0,0,0,.29))
+  padding-left: 42px
+  width: 194px
+  height: 40px
+  &.name
+    background: #fff url(../img/name.png) no-repeat 12px 10px
+  &.phone
+    background: #fff url(../img/phone.png) no-repeat 12px 10px
+.button
+  border: 1px solid #fd794d
+  +border-radius(8px)
+  +background-clip(padding-box)
+  background: #fed149
+  +background-image(linear-gradient(to bottom, #fd704a 0%, #feaa67 100%))
+  height: 48px
+  padding: 0 67px
+  font-size: 24px
+  color: #ffffff
+  font-weight: normal
+  font-family: 'ralewaybold'
+  +text-shadow(0 2px 0 #fd704a)
+  +box-shadow(0 4px 0 #fd704a)
+  &:hover
+    +background-image(linear_gradient(#feaa67 0%, #fd704a 100%))
+.big-button
+  height: 43px
+  padding: 12px 20px 0
+  display: table
+  margin: 0 auto
+  text-decoration: none
+
+
+.counter
+  position: absolute
+  bottom: -90px
+  left: 490px
+  width: 285px
+  display: block
+  text-align: center
+  margin: 40px -40px 0 auto
+
+  p
+    color: #455b6d
+    font-family: "Arial"
+    display: inline-block
+    margin-bottom: 5px
+    margin-top: 3px
+    font-size: 15px
+    letter-spacing: 3px
+    position: absolute
+    top: 42px
+    left: 16px
+    &.time
+      letter-spacing: normal
+      font-size: 14px
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    display: inline-block
+
+    li
+      float: left
+      margin: 0 6px
+      text-align: center
+      position: relative
+
+      span
+        +text-shadow(1px 1px 1px rgb(0, 0, 0))
+        font-family: 'Georgia'
+        font-style: bold
+        display: block
+        font-size: 36px
+        width: 64px
+        height: 66px
+        color: #455b6d
+        @include border-radius(14px)
+        @include background-clip(padding-box)
+        +box-shadow(0 2px 3px rgba(0,0,0,.36))
+        background: #fff
+        border: 4px solid #47b3ea
+
+
+
+
+// common blocks      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
