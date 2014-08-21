@@ -7,8 +7,13 @@ head.ready(function() {
     $('#form2 form').validate();
 
     $('#form3 form').validate();
-
-
+    jQuery(document).ready(function($){
+    $('.slider .cycle-slide').click(function(){
+        var index = $('.slider').data('cycle.API').getSlideIndex(this);
+        $('.cycle-slide-active').removeClass('cycle-slide-active');
+        $(this).addClass('cycle-slide-active');
+    });
+        });
     (function ($) {
         // Counter
 

@@ -263,115 +263,135 @@ header
       padding-left: 20px
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.specs
+  background-color: #f1f8fc
+  +background(linear-gradient(#e2f3fc 0%, #fff 100%))
+  height: 690px
+  margin-top: 10px
+  padding-top: 25px
+  .title
+    text-align: center
+    +georgia
+    font-weight: bold
+    font-style: italic
+    color: #48b4ea
+    font-size: 42px
+    line-height: 1em
+    &.mini
+      font-size: 16px
+      color: #000000
+      text-align: left
+  .specs_in
+    @extend %in
+    +clr
+    margin-top: 28px
+  .specs_left
+    float: left
+    width: 480px
+    text-align: left
+    p
+      margin-top: 15px
+      &:last-of-type
+        margin-bottom: 20px
+      &:first-of-type
+        margin-top: 0
+  .specs_colors
+    margin-top: 20px
+    .circle
+      width: 54px
+      height: 54px
+      +border-radius(50%)
+      +background-clip(padding-box)
+      display: inline-block
+      margin-right: 30px
+      &.green
+        background: rgb(149,234,72)
+        +background-image(radial-gradient(center center, 45px 45px, rgb(149,234,72) 0%, rgb(118,249,77) 100%))
+
+      &.yellow
+        background: rgb(234,150,72)
+        +background-image(radial-gradient(center center, 45px 45px, rgb(234,150,72) 0%, rgb(249,201,77) 100%))
+
+      &.blue
+        background: #47b3e9
+        +background-image(radial-gradient(center center, 45px 45px, #489be9 0%, #4d7afa 100%))
+
+      &.red
+        background: rgb(234,72,101)
+        +background-image(radial-gradient(center center, 45px 45px, rgb(234,72,101) 0%, rgb(249,87,77) 100%))
+    .text
+      +rwb
+      display: inline-block
+      line-height: 1.3em
+
+
+  .specs_right
+    float: right
+    width: 466px
+    position: relative
+    .slider_wrapper
+      display: table
+      margin: 0 auto
+    .slider
+
+      width: 426px !important
+      .item
+        margin-right: 10px
+        display: inline-block
+    .prev
+      position: absolute
+      +s(arrow_left)
+      top: 50px
+      left: -4px
+      cursor: pointer
+      z-index: 1
+    .next
+      position: absolute
+      +s(arrow_right)
+      top: 50px
+      right: -4px
+      cursor: pointer
+      z-index: 1
+    .cycle-slide
+      img
+        border: rgba(72,180,234, 0.4) 2px solid
+        +border-radius(4px)
+
+    .cycle-slide-active
+      img
+        +background-clip(padding-box)
+        +border-radius(4px)
+        border: rgb(72,180,234) 3px solid !important
+
+    .specs_table
+      margin-top: 28px
+      table
+        border-collapse: separate
+        +border-top-radius(10px)
+        $table-color: #b1d9ed
+        +alternating-rows-and-columns($table-color, adjust-lightness($table-color, 12), #000000, rgb(72,180,234))
+        +border-top-radius(20px)
+        tr
+          height: 31px
+          line-height: 2em
+          +arial
+          font-size: 16px
+          td
+            padding-left: 16px
+        th
+          height: 53px
+          +georgia
+          font-style: italic
+          font-weight: bold
+          color: white
+          font-size: 24px
+          line-height: 2em
+          +border-top-radius(10px)
+    .music
+      +border-radius(10px)
+      +background-clip(padding-box)
+      background: #fde191 url(../img/note.png) 40px 20px no-repeat
+      font-style: italic
+      padding: 18px 20px 15px 110px
+      margin-top: 35px
+.why
