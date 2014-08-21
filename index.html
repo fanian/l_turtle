@@ -14,8 +14,8 @@
 <div class="out">
 <div class="menu">
     <nav>
-        <ul>
-            <li><a href="#about">Об интернет-магазине</a></li>
+        <ul class="js-nav">
+            <li class="is-active"><a href="#about">Об интернет-магазине</a></li>
             <li><a href="#delivery">О доставке</a></li>
             <li><a href="#faq">Вопросы и ответы</a></li>
             <li><a href="#benefits">Преимущества</a></li>
@@ -32,8 +32,9 @@
     </nav>
 
 </div>
+<div class="page">
 <header>
-   <div class="header_in">
+<span id="about" class="section"></span><div class="header_in">
       <div class="header_text">
           <h3>Идеальный подарок ребенку</h3>
           <h4>Музыкальная черепашка<br />
@@ -79,7 +80,7 @@
            <div class="price discount"><p class="small">скидка <span>30%</span></p></div>
            <div class="arrow_middle"></div>
 
-           <form action="#" method="post">
+           <form id ="form1" action="#" method="post">
                <input type="text" name="name" class="name required" placeholder="Как Вас зовут">
                <input type="text" name="phone" class="phone required" placeholder="Ваш контактный номер">
                <button class="button">Заказать</button>
@@ -92,7 +93,7 @@
    </div>
 
 </header>
-<div class="hello">
+<span id="benefits" class="section"></span><div class="hello">
     <div class="hello_in">
        <div class="hello_item">
            <div class="hello_img">
@@ -130,7 +131,7 @@
         <div class="turtle_img-small"><img src="img/turtle_small.png" alt="turtle"/></div>
     </div>
 </div>
- <div class="specs">
+ <span id="faq" class="section"></span><div class="specs">
  <h2 class="title">Особенности Музыкальной<br /> черепашки</h2>
      <div class="specs_in">
          <div class="specs_left">
@@ -182,8 +183,6 @@
               <div class="item"><img src="img/slider_img2.png" alt="img"/></div>
               <div class="item"><img src="img/slider_img3.png" alt="img"/></div>
               <div class="item"><img src="img/slider_img2.png" alt="img"/></div>
-              <div class="item"><img src="img/slider_img1.png" alt="img"/></div>
-              <div class="item"><img src="img/slider_img3.png" alt="img"/></div>
 
              </div>
 
@@ -227,7 +226,7 @@
 
      </div>
  </div>
-<div class="why">
+<span id="delivery" class="section"></span><div class="why">
     <h2 class="title">Почему 1 млн. покупателей<br />выбрали нас?</h2>
     <div class="why_in">
         <div class="item">
@@ -272,15 +271,30 @@
         <div class="header_form-block">
             <div class="price"><p>от<br /> <span>1300</span> руб.</p></div>
             <div class="price discount"><p class="small">скидка <span>30%</span></p></div>
-</div>
+            <form id="form2" action="#" method="post">
+                <input type="text" name="name" class="name required" placeholder="Как Вас зовут">
+                <input type="text" name="phone" class="phone required" placeholder="Ваш контактный номер">
+                <button class="button">Заказать</button>
+
+
+            </form>
+            <h4>или по 24\7 номеру в Махачкале
+                (044) 383-43-35</h4>
         </div>
+    </div>
+</div>
+</div>
+<div id="layout_footer"></div>
 </div>
 <footer>
-
-
+    <div class="footer_in">
+    <a href="#">Политика конфиденциальности</a>
+    <a href="#">Партнерская программа</a>
+    <h3 class="details">
+        Реквизиты...ОГРНО  34254656789  ОКПО   67676767676767565423
+    </h3>
+    </div>
 </footer>
-
-</div>
 <!-- END out-->
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>

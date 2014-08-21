@@ -3,17 +3,59 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-    $('#form1 form').validate();
-    $('#form2 form').validate();
+    $('#form1').validate();
+    $('#form2').validate();
 
-    $('#form3 form').validate();
-    jQuery(document).ready(function($){
+  //add css class to cycle slider item, when clicking
+  jQuery(document).ready(function($){
     $('.slider .cycle-slide').click(function(){
         var index = $('.slider').data('cycle.API').getSlideIndex(this);
         $('.cycle-slide-active').removeClass('cycle-slide-active');
         $(this).addClass('cycle-slide-active');
     });
+  });
+
+
+    //yet another scrolling with hightlight effect (works for me)
+//each marker link would be with section class
+//.page is class of page without top menu )
+// Navigation
+    $('.js-nav a').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 20
+        }, 500, 'swing', function () {
+            // window.location.hash = target;
         });
+    });
+
+    function navScroll(){
+        $('.section').each(function(){
+            var pos = $(this).offset().top;
+            var id = $(this).attr('id');
+            var top = ($('.page').offset().top - 80);
+            if( $(window).scrollTop() >= (pos - 79)){
+                $('.js-nav li').removeClass('is-active');
+                $('[href = #'+id+']').parent().addClass('is-active');
+            }
+            if($(window).scrollTop() < top){
+                $('.js-nav li').removeClass('is-active');
+            }
+        });
+    }
+
+    $(window).scroll(function() {
+        navScroll();
+    });
+
+
+
+
+
     (function ($) {
         // Counter
 
