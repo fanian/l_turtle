@@ -29,7 +29,7 @@ input.phone { background: white url(../img/phone.png) no-repeat 12px 10px; }
 
 .big-button { height: 43px; padding: 12px 20px 0; display: table; margin: 0 auto; text-decoration: none; }
 
-.counter { position: absolute; bottom: -90px; left: 490px; width: 285px; display: block; text-align: center; margin: 40px -40px 0 auto; }
+.counter { position: absolute; bottom: -60px; left: 345px; width: 285px; display: block; text-align: center; margin: 40px -40px 0 auto; }
 .counter p { color: #455b6d; font-family: "Arial"; display: inline-block; margin-bottom: 5px; margin-top: 3px; font-size: 15px; letter-spacing: 3px; position: absolute; top: 42px; left: 16px; }
 .counter p.time { letter-spacing: normal; font-size: 14px; }
 .counter ul { list-style: none; margin: 0; padding: 0; display: inline-block; }
@@ -76,7 +76,7 @@ input::placeholder { font-size: 16px; font-family: "Arial"; font-weight: normal;
 .menu nav .menu_addr { font-family: "Arial"; font-weight: normal; font-style: normal; font-size: 12px; font-weight: bold; float: right; text-align: right; }
 
 header { background: url(../img/top_bg.jpg) center no-repeat; -moz-background-size: cover 100%; -webkit-background-size: cover 100%; background-size: cover 100%; height: 706px; }
-header .header_in { padding-top: 85px; *zoom: 1; }
+header .header_in { padding-top: 85px; position: relative; *zoom: 1; }
 header .header_in:after { content: " "; display: table; clear: both; }
 header .header_in .header_text { float: left; }
 header .header_in .header_text h3 { font-family: "Arial"; font-weight: normal; font-style: normal; font-weight: bold; font-size: 30px; color: white; text-shadow: 0 0 20px white; }
@@ -87,7 +87,7 @@ header .header_in .header_text ul li:before { position: absolute; background: ur
 header .header_in .header_text .action { position: relative; margin-top: 25px; display: inline-block; border: dashed 5px #fe508a; width: 250px; height: 145px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; background: white; }
 header .header_in .header_text .action p { font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 24px; font-weight: bold; font-style: italic; color: #fe508a; padding: 25px 30px; }
 header .header_in .header_text .action:after { background: url('../img/icons-s901c45737e.png') 0 -110px no-repeat; width: 65px; height: 49px; position: absolute; content: ""; top: 166px; left: 256px; }
-header .header_in .header_turtle-img { position: absolute; left: 375px; top: 0; }
+header .header_in .header_turtle-img { position: absolute; left: 230px; top: 0; }
 header .header_in .header_form-block { *zoom: 1; float: right; width: 235px; margin-top: 265px; position: relative; }
 header .header_in .header_form-block:after { content: " "; display: table; clear: both; }
 header .header_in .header_form-block h4 { font-family: "Arial"; font-weight: normal; font-style: normal; font-size: 14px; font-weight: bold; text-align: right; padding-top: 15px; }
